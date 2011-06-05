@@ -1,0 +1,15 @@
+id  : SortableWidget
+key : sortablewidget
+name: Sortable Dashboard Widget
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+l10n_class: SortableWidget::L10N
+description: '<__trans phrase="Sortable Dashboard Widget.">'
+applications:
+    cms:
+        methods:
+            save_widget_order: $sortablewidget::SortableWidget::Plugin::save_widget_order
+callbacks:
+    MT::App::CMS::template_source.dashboard: $sortablewidget::SortableWidget::Plugin::template_source
+
