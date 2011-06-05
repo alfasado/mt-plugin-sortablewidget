@@ -43,8 +43,8 @@ sub save_widget_order {
 sub template_source {
     my ( $cb, $app, $tmpl ) = @_;
     my $user = $app->user;
-    use Data::Dumper;
-    warn Dumper $user->widgets;
+    # use Data::Dumper;
+    # warn Dumper $user->widgets;
     my $js = <<'JS';
 <script type="text/javascript">
 jQuery( function() {
